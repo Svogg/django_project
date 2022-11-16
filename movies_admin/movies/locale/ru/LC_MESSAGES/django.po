@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-19 11:50+0000\n"
+"POT-Creation-Date: 2022-11-15 22:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,38 +49,39 @@ msgid "creation date"
 msgstr "дата создания"
 
 #: movies/models.py:39
+msgid "file path"
+msgstr "файл"
+
+#: movies/models.py:40
 msgid "rating"
 msgstr "рейтинг"
 
-#: movies/models.py:40
+#: movies/models.py:41
 msgid "type"
 msgstr "тип"
 
-#: movies/models.py:52
+#: movies/models.py:53
 msgid "full_name"
 msgstr "фио"
 
-#: movies/models.py:64 movies/models.py:75
+#: movies/models.py:65 movies/models.py:76
 msgid "film_work"
 msgstr "кинопроизведение"
 
-#: movies/models.py:65
+#: movies/models.py:66
 msgid "genre"
 msgstr "жанр"
 
-#: movies/models.py:76
+#: movies/models.py:77
 msgid "person"
 msgstr "человек"
 
-#: movies/models.py:77
+#: movies/models.py:78
 msgid "role"
 msgstr "роль"
 
 #~ msgid "certificate"
 #~ msgstr "сертефикат"
-
-#~ msgid "file"
-#~ msgstr "файл"
 
 #~ msgid "male"
 #~ msgstr "мужчина"
