@@ -1,14 +1,9 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-19 11:50+0000\n"
+"POT-Creation-Date: 2022-11-15 22:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,29 +42,33 @@ msgid "creation date"
 msgstr ""
 
 #: movies/models.py:39
-msgid "rating"
+msgid "file path"
 msgstr ""
 
 #: movies/models.py:40
+msgid "rating"
+msgstr ""
+
+#: movies/models.py:41
 msgid "type"
 msgstr ""
 
-#: movies/models.py:52
+#: movies/models.py:53
 msgid "full_name"
 msgstr ""
 
-#: movies/models.py:64 movies/models.py:75
+#: movies/models.py:65 movies/models.py:76
 msgid "film_work"
 msgstr ""
 
-#: movies/models.py:65
+#: movies/models.py:66
 msgid "genre"
 msgstr ""
 
-#: movies/models.py:76
+#: movies/models.py:77
 msgid "person"
 msgstr ""
 
-#: movies/models.py:77
+#: movies/models.py:78
 msgid "role"
 msgstr ""

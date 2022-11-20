@@ -1,14 +1,9 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-19 11:50+0000\n"
+"POT-Creation-Date: 2022-11-18 15:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,6 +35,14 @@ msgstr "название"
 msgid "description"
 msgstr "описание"
 
+#: movies/models.py:31
+msgid "Genre_verbose"
+msgstr "Жанр"
+
+#: movies/models.py:32
+msgid "Genre_verbose_plural"
+msgstr "Жанры"
+
 #: movies/models.py:36
 msgid "title"
 msgstr "заголовок"
@@ -49,38 +52,71 @@ msgid "creation date"
 msgstr "дата создания"
 
 #: movies/models.py:39
+msgid "file path"
+msgstr "файл"
+
+#: movies/models.py:40
 msgid "rating"
 msgstr "рейтинг"
 
-#: movies/models.py:40
+#: movies/models.py:41
 msgid "type"
 msgstr "тип"
 
-#: movies/models.py:52
+#: movies/models.py:48
+msgid "FilmWork_verbose"
+msgstr "Кинопроизведение"
+
+#: movies/models.py:49
+msgid "FilmWork_verbose_plural"
+msgstr "Кинопроизведения"
+
+#: movies/models.py:53
 msgid "full_name"
 msgstr "фио"
 
-#: movies/models.py:64 movies/models.py:75
+#: movies/models.py:60
+msgid "Person_verbose"
+msgstr "Над фильмом работал"
+
+#: movies/models.py:61
+msgid "Person_verbose_plural"
+msgstr "Над фильмом работали"
+
+#: movies/models.py:65 movies/models.py:76
 msgid "film_work"
 msgstr "кинопроизведение"
 
-#: movies/models.py:65
+#: movies/models.py:66
 msgid "genre"
 msgstr "жанр"
 
-#: movies/models.py:76
+#: movies/models.py:71
+msgid "GenreFilmWork_verbose"
+msgstr "Жанр Кинопроизведения"
+
+#: movies/models.py:72
+msgid "GenreFilmWork_verbose_plural"
+msgstr "Жанры Кинопроизведениев"
+
+#: movies/models.py:77
 msgid "person"
 msgstr "человек"
 
-#: movies/models.py:77
+#: movies/models.py:78
 msgid "role"
 msgstr "роль"
 
+#: movies/models.py:83
+msgid "PersonFilmWork_verbose"
+msgstr "Над Кинопроизведением работал"
+
+#: movies/models.py:84
+msgid "PersonFilmWork_verbose_plural"
+msgstr "Над Кинопроизведением работали"
+
 #~ msgid "certificate"
 #~ msgstr "сертефикат"
-
-#~ msgid "file"
-#~ msgstr "файл"
 
 #~ msgid "male"
 #~ msgstr "мужчина"

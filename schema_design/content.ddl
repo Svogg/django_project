@@ -42,9 +42,10 @@ create table if not exists content.person_film_work (
     created timestamp with time zone
 );
     
-create unique index if not exists film_work_person_idx on content.person_film_work(
+create unique index if not exists film_work_person_role_idx on content.person_film_work(
                                                                      film_work_id,
-                                                                     person_id
+                                                                     person_id,
+                                                                     role
 );
 
 create unique index if not exists film_work_genre_idx on content.genre_film_work(
