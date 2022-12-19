@@ -64,15 +64,18 @@ class Person(UUIDMixin, TimeStampedMixin):
 class GenreFilmWork(UUIDMixin):
     film_work = models.ForeignKey(FilmWork, verbose_name=_('film_work'), on_delete=models.CASCADE)
     genre = models.ForeignKey(Genre, verbose_name=_('genre'), on_delete=models.CASCADE)
-    created_at = models.DateTimeField(auto_now_add=True)
+    created_at = models.DateTimeField(
+        auto_now_add=True,
+        verbose_name=_('created_at')
+    )
 
     class Meta:
         db_table = "content\".\"genre_film_work"
         verbose_name = _('GenreFilmWork_verbose')
         verbose_name_plural = _('GenreFilmWork_verbose_plural')
 
-        constraints = [
-            models.UniqueConstraint(fields=[
+        indexes = [
+            models.Index(fields=[
                 'film_work',
                 'genre'
             ],
@@ -81,6 +84,9 @@ class GenreFilmWork(UUIDMixin):
 
 
 class PersonFilmWork(UUIDMixin):
+    film_work = models.ForeignKey(FilmWork, verbose_name=_('film_work'), on_delete=models.CASCADE)
+    person = models.ForeignKey(Person, verbose_name=_('person'), on_delete=models.CASCADE)
+
     class Role(models.TextChoices):
         actor = _('actor')
         screenwriter = _('screenwriter')
@@ -88,25 +94,26 @@ class PersonFilmWork(UUIDMixin):
         editor = _('editor')
         director = _('director')
 
-    film_work = models.ForeignKey(FilmWork, verbose_name=_('film_work'), on_delete=models.CASCADE)
-    person = models.ForeignKey(Person, verbose_name=_('person'), on_delete=models.CASCADE)
-
-    role = models.ForeignKey(
-        'self',
+    role = models.CharField(
+        verbose_name=_('role'),
         max_length=100,
         choices=Role.choices,
-        default=Role.actor,
-        on_delete=models.CASCADE
+        default=Role.actor
     )
-    created_at = models.DateTimeField(auto_now_add=True)
+
+    created_at = models.DateTimeField(
+        auto_now_add=True,
+        verbose_name=_('created_at')
+
+    )
 
     class Meta:
         db_table = "content\".\"person_film_work"
         verbose_name = _('PersonFilmWork_verbose')
         verbose_name_plural = _('PersonFilmWork_verbose_plural')
 
-        constraints = [
-            models.UniqueConstraint(fields=[
+        indexes = [
+            models.Index(fields=[
                 'film_work',
                 'person',
                 'role'

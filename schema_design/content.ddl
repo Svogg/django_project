@@ -28,16 +28,16 @@ create table if not exists content.person (
 
 create table if not exists content.genre_film_work (
     id uuid primary key,
-    genre_id uuid references content.genre,
-    film_work_id uuid references content.film_work,
+    genre_id uuid references  content.genre on delete cascade,
+    film_work_id uuid references content.film_work on delete cascade,
     created timestamp with time zone
 );
 
 
 create table if not exists content.person_film_work (
     id uuid primary key,
-    person_id uuid references content.person,
-    film_work_id uuid references content.film_work,
+    person_id uuid references content.person on delete cascade,
+    film_work_id uuid references content.film_work on delete cascade,
     role text not null,
     created timestamp with time zone
 );
